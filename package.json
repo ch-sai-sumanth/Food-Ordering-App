@@ -1,0 +1,26 @@
+{
+  "name": "food-ordering-app",
+  "version": "1.0.0",
+  "description": "Food ordering app in React",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ch-sai-sumanth/Food-Ordering-App.git"
+  },
+  "author": "Sumanth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ch-sai-sumanth/Food-Ordering-App/issues"
+  },
+  "homepage": "https://github.com/ch-sai-sumanth/Food-Ordering-App#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "parcel": "^2.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserlist":["last 2 versions"]
+}
