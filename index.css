@@ -29,6 +29,7 @@
     flex-wrap: wrap;
 }
 .res-card{
+    height:400px;
     margin:5px;
     padding:5px;
     width:200px;
@@ -50,4 +51,15 @@
 .filter-btn{
     padding:5px;
     margin:10px;
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    height: 400px;;
+    margin:5px;
+    padding:5px;
+    width:200px;
+    background-color: lightgrey;
 }
