@@ -25,17 +25,24 @@
     padding:10px;
 }
 .res-container{
-    padding:5px;
-    margin:10px;
+    display:flex;
+    flex-wrap: wrap;
 }
 .res-card{
+    margin:5px;
+    padding:5px;
     width:200px;
-    height:300px;
+    background-color: lightgrey;
+}
+.res-card:hover{
+
     border:1px solid black;
+    cursor:pointer;
 }
 .res-logo{
-    padding:5px;
-    width:95%;
+    width:100%;
+    height:45%;
+    object-fit: cover;
 }
 .res-logo h3{
     padding:1px;
