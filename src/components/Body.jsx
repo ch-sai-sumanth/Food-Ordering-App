@@ -29,9 +29,9 @@ const Body=()=>{
   //     const data = await response.json();
   //     console.log('Response data:', data);
 
-          //here we will set the listOfRestaurents , filteredListOfRestaurent state variables using their respected set functions
-          //setListOfRestaurent( data);
-          //setFilteredRestaurent(data);
+  //         // here we will set the listOfRestaurents , filteredListOfRestaurent state variables using their respected set functions
+  //         // setListOfRestaurent( data);
+  //         // setFilteredRestaurent(data);
 
 
   //   } catch (error) {
