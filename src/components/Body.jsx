@@ -3,10 +3,14 @@ import {Link} from "react-router-dom";
 import { useState,useEffect } from "react";
 import Shimmer from "./Shimmer";
 import { SWIGGYAPI } from "../utils/const";
+import useOnlineStatus from "../utils/useOnlineStatus";
 const Body=()=>{
   const [listOfrestaurants,setListOfrestaurants]=useState([] );
   const [filteredListOfrestaurants,setFilteredListOfrestaurants]=useState([]);
   const [searchText,setSearchText]=useState("");
+
+  const onlineStatus=useOnlineStatus();
+
   useEffect(() => {
     fetchData();
   }, []);
@@ -20,9 +24,11 @@ const Body=()=>{
       const restaurantList=cards[4].card.card.gridElements.infoWithStyle.restaurants;
       setListOfrestaurants(restaurantList);
       setFilteredListOfrestaurants(restaurantList);
+
   };
 
-  
+    if(!onlineStatus)
+      return <h1>Seems Like you are offline!! Please check your Internet conncetion</h1>;
     return (listOfrestaurants.length===0 ? (<Shimmer/>) :(
         <div className="body">
             <div className="filter">
